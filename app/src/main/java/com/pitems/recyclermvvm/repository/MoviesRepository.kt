@@ -1,8 +1,9 @@
 package com.pitems.recyclermvvm.repository
 
-import com.pitems.recyclermvvm.MoviesApi
-import com.pitems.recyclermvvm.SafeApiRequest
+import com.pitems.recyclermvvm.network.MoviesApi
+import com.pitems.recyclermvvm.network.SafeApiRequest
 
-class MoviesRepository ( private val api:MoviesApi):SafeApiRequest(){
+class MoviesRepository ( private val api: MoviesApi):
+   SafeApiRequest(){
    suspend fun getMovies()=apiRequest { api.getMovies() }
 }

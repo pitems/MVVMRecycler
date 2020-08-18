@@ -3,6 +3,7 @@ package com.pitems.recyclermvvm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.pitems.recyclermvvm.network.MoviesApi
 import com.pitems.recyclermvvm.repository.MoviesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

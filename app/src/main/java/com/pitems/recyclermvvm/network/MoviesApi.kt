@@ -1,5 +1,6 @@
-package com.pitems.recyclermvvm
+package com.pitems.recyclermvvm.network
 
+import com.pitems.recyclermvvm.network.response.MoviesResponse
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -13,7 +14,7 @@ interface MoviesApi {
 
     //Remember the companion object is made so the interface could be a singleton
     companion object{
-        operator fun invoke():MoviesApi{
+        operator fun invoke(): MoviesApi {
           return  Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
                 .baseUrl("https://api.simplifiedcoding.in/course-apis/recyclerview/")
                 .build().create(MoviesApi::class.java)

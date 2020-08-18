@@ -1,4 +1,4 @@
-package com.pitems.recyclermvvm
+package com.pitems.recyclermvvm.network
 
 import retrofit2.Response
 import java.io.IOException
@@ -10,7 +10,9 @@ abstract class SafeApiRequest{
             return response.body()!!
         }else{
             //TODO handle api exception
-            throw ApiException(response.code().toString())
+            throw ApiException(
+                response.code().toString()
+            )
         }
     }
 }

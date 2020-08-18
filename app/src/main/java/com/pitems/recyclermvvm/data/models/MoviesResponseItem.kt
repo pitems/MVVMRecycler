@@ -1,4 +1,4 @@
-package com.pitems.recyclermvvm.network.response
+package com.pitems.recyclermvvm.data.models
 
 data class MoviesResponseItem(
     val id: Int,

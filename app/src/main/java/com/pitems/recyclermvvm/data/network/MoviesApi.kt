@@ -1,6 +1,6 @@
-package com.pitems.recyclermvvm.network
+package com.pitems.recyclermvvm.data.network
 
-import com.pitems.recyclermvvm.network.response.MoviesResponse
+import com.pitems.recyclermvvm.data.models.MoviesResponse
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
